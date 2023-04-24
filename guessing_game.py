@@ -62,6 +62,9 @@ def start_game():
     
     yes_or_no = input("Do you want to play again? Y/N ")
     
+    while yes_or_no.lower() != "y" and yes_or_no.lower() != "n":
+        yes_or_no = input("Sorry, I don't understand. Do you want to play again? Y/N ")
+    
     if yes_or_no.lower() == "y":
         start_game()
     elif yes_or_no.lower() == "n":
